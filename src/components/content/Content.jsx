@@ -1,12 +1,13 @@
 import React from "react";
 import Container from "../container";
+import {FastBusinessLoan, MoneyForBusiness} from '../import'
 
 const Content = () => {
   return (
     <section className="mt-20">
       <Container className="flex mb-20">
         <div class="flex w-full gap-12">
-          <aside class="h-screen sticky top-24 w-[28%] border-r">
+          <aside class="h-screen sticky hidden md:block top-24 w-[28%] border-r">
             <ul className="">
               {
                 sideTitle?.map((item,idx)=>(
@@ -16,8 +17,9 @@ const Content = () => {
             </ul>
           </aside>
 
-          <main className=" flex-1 ">
-            
+          <main className="flex-1 ">
+              <MoneyForBusiness/>
+              <FastBusinessLoan/>
           </main>
         </div>
       </Container>
