@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { Poppins } from 'next/font/google'
-import { Hero } from '../components/import'
+import { Content, Hero, Step } from '../components/import'
 
 const poppins = Poppins({ 
   subsets: ['latin'],
@@ -14,6 +14,8 @@ export default function Home() {
       className={` ${poppins.className}`}
     >
       <Hero/>
+      <Step />
+      <Content/>
       
     </div>
   )

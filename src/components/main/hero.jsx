@@ -29,7 +29,7 @@ const Hero = () => {
           </div>
         </Container>
       </main>
-      <section className="mb-20 md:-mt-10">
+      <section className="mb-16 md:-mt-10">
         <div className="max-w-[780px] rounded-xl w-full mx-auto bg-gray-100 md:shadow-lg p-5">
         <p >Brist på kapital kan hindra vilket företag som helst från att utvecklas i rätt positiv riktning. Ibland är det helt avgörande om det finns investeringskapital och likvida medel för om en affärsidé ska kunna verkställas. <span className="text-primary font-medium">Hos företagslån utan</span> säkerhet har vi lösningarna både för långsiktiga investeringar och hastigt oplanerade kostnader genom marknadens mest attraktiva företagslån.</p>
         </div>
