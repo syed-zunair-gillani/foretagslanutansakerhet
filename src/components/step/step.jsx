@@ -9,7 +9,7 @@ const Steps = () => {
                {
                     data.map((s,idx)=>(
                          <div key={idx} className='bg-gray-100 p-6 border z-10 border-primary'>
-                              <h3 className='font-semibold'>{s.title}</h3>
+                              <h3 className='font-semibold text-secondary'>{s.title}</h3>
                               <p className='mt-2 text-sm'>{s.info}</p>
                          </div>
                     ))
