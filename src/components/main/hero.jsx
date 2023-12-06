@@ -40,10 +40,7 @@ const Hero = () => {
       </main>
       <section className="container mx-auto px-3 my-16">
         <div>
-          <h3 className="mt-4 text-3xl mb-3 font-semibold text-primary">
-            <strong>Snabbfakta:</strong> Ränta På Företagslån, Företagslån Utan
-            UC, Företagslån Utan Säkerhet Eller Utan Borgen
-          </h3>
+          
 
           <p>
             Brist på kapital kan hindra vilket företag som helst från att

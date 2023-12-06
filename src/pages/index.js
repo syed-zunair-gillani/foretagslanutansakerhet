@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Poppins } from 'next/font/google'
 import { Content, Hero, Step } from '../components/import'
+import ServicesCard from '../components/ServicesCard/ServicesCard'
 
 const poppins = Poppins({ 
   subsets: ['latin'],
@@ -15,6 +16,7 @@ export default function Home() {
     >
       <Hero/>
       <Step />
+      <ServicesCard/>
       <Content/>
       
     </div>

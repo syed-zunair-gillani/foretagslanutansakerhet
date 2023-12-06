@@ -2,7 +2,7 @@ import React from 'react'
 
 const FastBusinessLoan = () => {
      return (
-          <section className='mt-10'>
+          <section className='mt-10' id="FastBusinessLoan">
                <h2 className='text-xl sm:text-2xl md:text-3xl font-bold'>Snabba företagslån</h2>
                <p className='mt-3'>Många vill ha snabba företagslån och det finns idag många som erbjuder just snabba företagslån som innebär att du inom ett dygn efter att du blivit godkänd som låntagare har pengar på ditt konto. Kreditgivaren kommer dock sannolikt vilja se en budget och tillhörande prognoser först. Detta för att kunna bilda sig en uppfattning om dina framtida resultat. Alla kreditgivare brukar dessutom ta en kreditupplysning innan det är dags att bevilja. De kan även vilja titta på ditt betalningsbeteende, i klartext om du släpat efter med dina betalning.</p>
                <h3 className='text-xl font-medium mt-4'>DET FINNS FRAMFÖRALLT TRE VANLIGA SÄTT ATT LÅNA PENGAR TILL FÖRETAG SOM DU BEHÖVER KÄNNA TILL</h3>
@@ -10,7 +10,7 @@ const FastBusinessLoan = () => {
                     {
                          commonWays.map((way,idx)=>(
                               <div key={idx}>
-                                   <h4 className='text-xl mt-4 text-primary sm:text-2xl font-bold'>{way.title}</h4>
+                                   <h4 className='text-xl mt-4 text-secondary sm:text-2xl font-bold'>{way.title}</h4>
                                    <p className='mt-3'>{way.detail}</p>
                               </div>
                          ))

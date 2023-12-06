@@ -10,7 +10,7 @@ const Header = () => {
   const [isMobile, setIsMobile] = useState(false)
 
   return (
-    <header className='bg-primary text-white pr-3 md:p-5 fixed w-full flex items-center justify-between z-50'>
+    <header className='bg-primary border-b border-slate-800 text-white pr-3 md:p-5 fixed w-full flex items-center justify-between z-50'>
         <div className='flex items-center gap-4'>
             {/* logo */}
             <h2 className='text-2xl capitalize p-3 md:p-0 font-bold z-50 bg-primary'>foretagslanutansakerhet</h2>
