@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { Poppins } from 'next/font/google'
 import { Content, Hero, Step } from '../components/import'
 import ServicesCard from '../components/ServicesCard/ServicesCard'

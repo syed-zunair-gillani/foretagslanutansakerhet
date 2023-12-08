@@ -1,19 +1,19 @@
 export const NavLinks = [
      {
           name : "Home",
-          link: "home"
+          link: "/"
      },
      {
           name : "Business Loans",
-          link: "business-loans"
+          link: "/foretagslan"
      },
      {
           name : "Business Credit",
-          link: "business-credit"
+          link: "foretagskredit"
      },
      {
           name : "Business Insurance",
-          link: "business-insurance"
+          link: "foretagsforsakring"
      },
      // {
      //      name : "Sell Invoice",
