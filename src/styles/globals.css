@@ -6,9 +6,13 @@ body, html{
      scroll-behavior: smooth;
 }
 
+._content{
+     color: rgb(76, 76, 76);
+}
 ._content h2{
-     font-size: 2rem;
+     font-size: 1.7rem;
      font-weight: 700;
+     color: rgb(16, 16, 16) !important;
 }
 ._content p{
      font-size: 18px;
@@ -24,6 +28,7 @@ body, html{
      font-size: 1.4rem;
      font-weight: 700;
      margin-top: 10px;
+     color: rgb(16, 16, 16) !important;
 }
 ._content pre{
      font-size: 16px;
@@ -35,7 +40,9 @@ body, html{
 ._content img{
      width: 100%;
 }
-
+._content a{
+     color: #0CAA41;
+}
 ._content ul{
      list-style-type: disc;
      padding-left: 1.1rem;

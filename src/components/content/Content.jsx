@@ -1,15 +1,9 @@
 import React from "react";
 import Container from "../container";
-import { FastBusinessLoan, MoneyForBusiness } from "../import";
-import RealizeYourDream from "./RealizeYourDream";
-import ExpandBusiness from "./ExpandBusiness";
-import InterestOnBusinessLoans from "./InterestOnBusinessLoans";
-import Link from "next/link";
 import { useRouter } from "next/router";
 import {TOC} from '../toc'
 
-const Content = ({data:{homePagedata}}) => {
-  console.log("🚀 ~ file: Content.jsx:11 ~ Content ~ homePagedata:", homePagedata)
+const Content = ({data}) => {
 
   const router = useRouter()
   return (
@@ -21,7 +15,7 @@ const Content = ({data:{homePagedata}}) => {
           </aside>
 
           <main className="md:max-w-[75%] content _content" id="content">
-            <div dangerouslySetInnerHTML={{ __html:homePagedata?.content }}/>
+            <div dangerouslySetInnerHTML={{ __html:data?.content }}/>
           </main>
         </div>
       </Container>

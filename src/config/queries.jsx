@@ -36,3 +36,49 @@ query HomePage {
 }
 `;
 
+
+
+export const MainMenu = gql`
+query NewQuery {
+  menus {
+    nodes {
+      menuItems {
+        nodes {
+          uri
+          label
+        }
+      }
+      name
+      slug
+    }
+  }
+}`
+
+export const PagesQ = gql`
+query NewQuery($id: ID = "") {
+  page(id: $id, idType: URI) {
+    content
+    pageBanner {
+      title
+      subTitle
+      featuresList {
+        list
+      }
+    }
+    shortcontent {
+      shortTitle
+      shortContent
+    }
+    affiliateCard {
+      card {
+        title
+        link
+        info
+        sbTitle
+        logo {
+          mediaItemUrl
+        }
+      }
+    }
+  }
+}`
