@@ -5,15 +5,15 @@ import Pagebanner from "../../components/pageBanner/pagebanner";
 import Container from "../../components/container";
 import Image from "next/image";
 import apolloClient from "../../config/client";
-import { HomePageQ, PagesQ } from "../../config/queries";
+import { MainMenu, PagesQ } from "../../config/queries";
 import Link from "next/link";
-import { Content } from "../../components/import";
+import { Content, Header } from "../../components/import";
 
 const Foretagslan = ({ pageData }) => {
   const { shortcontent, pageBanner, affiliateCard, content } = pageData;
-  console.log("🚀 ~ file: index.jsx:10 ~ Foretagslan ~ pageData:", pageData);
   return (
     <>
+      
       <Pagebanner title={pageBanner?.title} info={pageBanner?.subTitle} />
       {shortcontent?.shortContent && (
         <Container className="my-20">
@@ -26,7 +26,7 @@ const Foretagslan = ({ pageData }) => {
       )}
 
       {/* affiliate cards  */}
-      {affiliateCard.card.length > 0 && (
+      {affiliateCard?.card?.length > 0 && (
         <Container className="mb-20">
           <div className="grid md:grid-cols-2 lg:grid-cols-3  gap-5 mt-10">
             {affiliateCard?.card?.map((card, idx) => (
@@ -85,7 +85,7 @@ export const getServerSideProps = async ({ params }) => {
       id: `/${pages}/`,
     },
   });
-
+  
   const pageData = response.data.page;
   return {
     props: {

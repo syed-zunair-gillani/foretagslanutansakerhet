@@ -1,5 +1,5 @@
 import { Poppins } from 'next/font/google'
-import { Content, Hero, Step } from '../components/import'
+import { Content, Header, Hero, Step } from '../components/import'
 import ServicesCard from '../components/ServicesCard/ServicesCard'
 import { HomePageQ, MainMenu } from '../config/queries'
 import apolloClient from '../config/client'
@@ -10,12 +10,12 @@ const poppins = Poppins({
   style: ['normal', 'italic'],
  })
 
-export default function Home(homePagedata, menus) {
-  console.log("🚀 ~ file: index.js:14 ~ Home ~ homePagedata:", homePagedata)
+export default function Home(homePagedata) {
   return (
     <div
       className={` ${poppins.className}`}
     >
+      <Header/>
       <Hero data={homePagedata}/>
       <Step data={homePagedata}/>
       <ServicesCard data={homePagedata}/>
@@ -34,6 +34,7 @@ export const getServerSideProps = async () => {
   return {
     props: {
       homePagedata,
+      
     },
   };
 }

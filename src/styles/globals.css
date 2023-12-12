@@ -37,8 +37,13 @@ body, html{
      border-left: 4px solid #0CAA41;
      white-space: break-spaces;
 }
+iframe{
+     width: -webkit-fill-available;
+}
+
 ._content img{
      width: 100%;
+     margin: 10px 0;
 }
 ._content a{
      color: #0CAA41;
