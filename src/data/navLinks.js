@@ -1,34 +1,30 @@
 export const NavLinks = [
      {
-          name : "Home",
-          link: "/"
+          name : "Foretagslan",
+          link: "foretagslan-3"
      },
      {
-          name : "Business Loans",
-          link: "/foretagslan"
-     },
-     {
-          name : "Business Credit",
+          name : "Foretagskredit",
           link: "foretagskredit"
      },
      {
-          name : "Business Insurance",
+          name : "Foretagsforsakring",
           link: "foretagsforsakring"
      },
-     // {
-     //      name : "Sell Invoice",
-     //      link: "sell-invoice"
-     // },
-     // {
-     //      name : "Accounting",
-     //      link: "accounting"
-     // },
-     // {
-     //      name : "Company Forms",
-     //      link: "company-forms"
-     // },
-     // {
-     //      name : "Shares",
-     //      link: "shares"
-     // }
+     {
+          name : "Salja Fakturor",
+          link: "factoring-att-salja-fakturor"
+     },
+     {
+          name : "Bokforing",
+          link: "bokforing"
+     },
+     {
+          name : "Bolagsformer",
+          link: "bolagsformer"
+     },
+     {
+          name : "Aktier",
+          link: "investera-i-aktier"
+     }
 ]

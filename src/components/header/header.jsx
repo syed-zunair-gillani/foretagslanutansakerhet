@@ -13,7 +13,7 @@ const Header = () => {
     <header className='bg-primary border-b border-slate-800 text-white pr-3 md:p-5 fixed w-full flex items-center justify-between z-50'>
         <div className='flex items-center gap-4'>
             {/* logo */}
-            <h2 className='text-2xl capitalize p-3 md:p-0 font-bold z-50 bg-primary'>foretagslanutansakerhet</h2>
+            <h2 className='text-2xl capitalize p-3 md:p-0 font-bold z-50 bg-primary'><Link href="#">foretagslanutansakerhet</Link></h2>
             <ul className={`flex flex-col md:flex-row gap-4 font-medium fixed w-full left-0 p-10 md:p-0 transition-all duration-300 ease-linear bg-primary md:relative ${isMobile ? 'top-12' : '-top-[100%]'}`}>
               {
                 NavLinks.map((nav,idx)=>(
