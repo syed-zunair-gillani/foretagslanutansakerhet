@@ -3,6 +3,8 @@ import { Content, Header, Hero, Step } from '../components/import'
 import ServicesCard from '../components/ServicesCard/ServicesCard'
 import { HomePageQ, MainMenu } from '../config/queries'
 import apolloClient from '../config/client'
+import parse from "html-react-parser";
+
 
 const poppins = Poppins({ 
   subsets: ['latin'],
@@ -11,6 +13,10 @@ const poppins = Poppins({
  })
 
 export default function Home(homePagedata) {
+
+  const fullHead = parse(homePagedata?.seo?.fullHead);
+
+
   return (
     <div
       className={` ${poppins.className}`}

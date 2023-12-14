@@ -58,6 +58,9 @@ export const PagesQ = gql`
 query NewQuery($id: ID = "") {
   page(id: $id, idType: URI) {
     content
+    seo {
+      fullHead
+    }
     pageBanner {
       title
       subTitle
