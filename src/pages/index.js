@@ -14,7 +14,7 @@ const poppins = Poppins({
 
 export default function Home(homePagedata) {
 
-  const fullHead = parse(homePagedata?.seo?.fullHead);
+  // const fullHead = parse(homePagedata?.seo?.fullHead);
 
 
   return (
