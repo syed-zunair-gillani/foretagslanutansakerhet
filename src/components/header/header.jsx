@@ -12,7 +12,7 @@ const Header = () => {
     <header className="bg-primary border-b border-slate-800 text-white pr-3 md:p-5 fixed w-full flex items-center z-50">
       <div className="flex items-center w-full md:justify-start justify-between  gap-4">
         {/* logo */}
-        <h2 className="sm:text-[21px] whitespace-nowrap capitalize inline p-3 md:p-0 font-bold z-50 bg-primary">
+        <h2 className="sm:text-[21px] text-lg whitespace-nowrap capitalize inline p-3 md:p-0 font-bold z-50 bg-primary">
           <Link href="/">Företagslån <span className="text-yellow-500">utan</span> Säkerhet</Link>
         </h2>
         <ul
