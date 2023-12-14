@@ -5,6 +5,9 @@
 body, html{
      scroll-behavior: smooth;
 }
+#lottie{
+     width: auto !important;
+}
 
 ._content{
      color: rgb(76, 76, 76);

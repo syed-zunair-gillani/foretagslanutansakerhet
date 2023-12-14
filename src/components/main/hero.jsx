@@ -23,7 +23,7 @@ const Hero = ({data:{homePagedata}}) => {
                 <li key={idx}>
                   <Link
                     href="#"
-                    className="hover:scale-110 transition-all duration-300 ease-linear flex justify-between items-center gap-4 bg-white text-primary w-[320px] px-4 rounded-md p-1"
+                    className="hover:scale-110 transition-all duration-300 ease-linear flex justify-between items-center gap-4 bg-white text-primary  w-full max-w-[320px] px-4 rounded-md p-1"
                   >
                     <p>{item.list}</p>
                     <RiArrowDownDoubleLine className="text-xl" />
